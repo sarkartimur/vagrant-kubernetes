@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "CLEANUP"
+rm -r -f /vagrant/.data
+
 echo "INIT KUBERNETES CONTROL PLANE WITH PERMANENT TOKEN"
 kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address=$1 --token-ttl=0
 
