@@ -18,7 +18,7 @@ add-apt-repository \
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -   
 
 apt-get update
-apt-get install -y docker.io
+apt-get install -y docker-ce docker-ce-cli containerd.io
 
 
 echo "INSTALL KUBERNETES"
